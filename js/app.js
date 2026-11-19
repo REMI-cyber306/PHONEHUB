@@ -31,7 +31,7 @@ function renderProducts() {
         p,
       ) => `<article class="product-card" data-id="${p.id}" tabindex="0" aria-label="View ${p.name}">
     <div class="product-art"><span class="product-tag">${p.tag}</span>${phoneMarkup(p)}</div>
-    <div class="product-info"><span class="product-brand">${p.brand}</span><h3>${p.name}</h3><p class="product-short">${p.screen} | ${p.ram} RAM | ${p.storage}</p><div class="product-bottom"><strong class="product-price">${money(p.price)}</strong><span class="view-product">View details</span></div></div></article>`,
+    <div class="product-info"><span class="product-brand">${p.brand}</span><h3>${p.name}</h3><p class="product-short">${p.finish} | ${p.ram} RAM | ${p.storage}</p><div class="product-bottom"><strong class="product-price">${money(p.price)}</strong><span class="view-product">View details</span></div></div></article>`,
     )
     .join("");
   grid.querySelectorAll(".product-card").forEach((card) => {
